@@ -1,0 +1,136 @@
+header {
+    /* background-color: #F0F8FF; */
+    display: flex;
+    padding: 2%;
+    border-bottom-style: double;
+    border-bottom-width: 12px;
+}
+
+/* .page2 {
+    display: flex;
+    padding: 1.2%;
+    border-bottom-style: double;
+    border-bottom-width: 12px;
+} */
+
+header h1 {
+    font-size: xx-large;
+    
+}
+
+.lightDarkMode {
+    position: absolute;
+    right: 2%;
+    background-color: white;
+    border-style: none;
+}
+
+.goBack {
+    position: absolute;
+    right: 5%;
+    top: 3.5%;
+    height: 35px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-style: none;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 87px;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    border-right-style: double;
+    border-right-width: 12px;
+}
+
+.right {
+    right: 0;
+}
+
+.center {
+    top: 45%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#circle {
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    /* background-image: linear-gradient(to bottom, yellow, #83580b);  */
+    /* background-image: -webkit-linear-gradient(bottom, #83580b 0%, yellow 100%); */
+    background-image: linear-gradient(180deg, #f8e7a7,  #f7e397, #f5da79, #f4d66a, #f1ca3c, #efc425, #ecbd10, #cea40e, #be980d, #91730a, #9D7B00);
+}
+
+
+.right h3 {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+input, label {
+    display: block;
+}
+
+input, .inputs, textarea {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+.blog-form {
+    position: relative;
+    top: 20%;
+    align-items: center; 
+    justify-content: center; 
+    place-items: center;
+}
+
+.blog-form h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box {
+    width: 900px;
+}
+
+#content {
+    height: 60px;
+}
+
+label {
+    justify-content: left;
+}
+
+#submit {
+    width: 900px;
+    height: 35px;
+    color: white;
+    background-color: black;
+}
