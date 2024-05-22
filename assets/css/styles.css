@@ -117,6 +117,7 @@ input, .inputs, textarea {
 
 label {
     justify-content: left;
+    display: flex;
 }
 
 #submit {
@@ -134,4 +135,56 @@ label {
 .darkMode {
     color: white;
     background-color: #28282B;
+}
+
+footer h4 {
+    text-align: center;
+    margin-top: 18px;
+}
+
+footer {
+    border-top-style: double;
+    border-top-width: 12px;
+    height: 120px;
+    position: relative;
+}
+
+.footer-bold {
+    font-weight: bolder;
+}
+
+footer ul {
+    position: absolute;
+    left: 1%;
+    font-style: italic;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    header, main, footer {
+    flex-direction: column;
+    }
+
+    section {
+    padding-right: 0;
+    }
+
+    .right, .split {
+        flex-basis: 100%;
+    }
+
+    .left {
+        flex-basis: 100%;
+    }
+
+    .horizontal-list {
+        flex-direction: column;
+    }
+    label, input {
+        flex-direction: column;
+        flex-basis: 100%;
+    }
 }

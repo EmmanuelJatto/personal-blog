@@ -10,6 +10,7 @@ const headerTags = document.querySelectorAll('header');
 const buttonTags = document.querySelectorAll('button');
 const h1Tags = document.querySelectorAll('h1');
 const newContainer = document.querySelector('new-container');
+const footerTag = document.querySelectorAll('footer');
 
 // Removed the signupButton event listener, because it was giving an error in the console, and wouldn't allow anything to work
 
@@ -31,15 +32,25 @@ lightDarkModeButton.addEventListener("click",function() {
     for(i = 0; i < h1Tags.length; i++) {
         h1Tags[i].setAttribute('style', 'color:white');
     }
+    for(i = 0; i < headerTags.length; i++) {
+        headerTags[i].setAttribute('style', 'background-color:black');
+    }
     for(i = 0; i < buttonTags.length; i++) {
-        buttonTags[i]. setAttribute('style', 'background-color:#28282B');
+        buttonTags[i]. setAttribute('style', 'background-color:black');
         break;
     }
     for(i = 0; i < sectionTags.length; i++) {
         sectionTags[i].setAttribute('style', 'color:white; background-color:#28282B');
     }
-    // document.body.classList.remove('lightMode');
-    // document.body.classList.add('darkMode');
+    for(i = 0; i < h3Tags.length; i++) {
+        h3Tags[i].setAttribute('style', 'color:black');
+    }
+    for(i = 0; i < footerTag.length; i++) {
+        footerTag[i].setAttribute('style', 'background-color:black');
+    }
+
+    document.body.classList.remove('lightMode');
+    document.body.classList.add('darkMode');
     const darkMode = '🌒';
     lightDarkModeButton.textContent = darkMode;
     }
@@ -50,13 +61,19 @@ lightDarkModeButton.addEventListener("click",function() {
         for(i = 0; i < h1Tags.length; i++) {
             h1Tags[i].setAttribute('style', 'color:black');
         }
+        for(i = 0; i < headerTags.length; i++) {
+            headerTags[i].setAttribute('style', 'background-color:white');
+        }
         for(i = 0; i < buttonTags.length; i++) {
             buttonTags[i]. setAttribute('style', 'background-color:white');
             break;
         }
-        newContainer.setAttribute('style', 'color:black');
-    //     document.body.classList.remove('darkMode');
-    //     document.body.classList.add('lightMode');
+        for(i = 0; i < footerTag.length; i++) {
+            footerTag[i].setAttribute('style', 'background-color:white');
+        }
+        // newContainer.setAttribute('style', 'color:black');
+        document.body.classList.remove('darkMode');
+        document.body.classList.add('lightMode');
     }
 });
 
