@@ -1,17 +1,9 @@
 header {
-    /* background-color: #F0F8FF; */
     display: flex;
     padding: 2%;
     border-bottom-style: double;
     border-bottom-width: 12px;
 }
-
-/* .page2 {
-    display: flex;
-    padding: 1.2%;
-    border-bottom-style: double;
-    border-bottom-width: 12px;
-} */
 
 header h1 {
     font-size: xx-large;
@@ -34,6 +26,7 @@ header h1 {
     background-color: black;
     color: white;
     border-style: none;
+    border-radius: 5px;
 }
 
 .split {
@@ -75,8 +68,6 @@ header h1 {
     font-size: 50px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-    /* background-image: linear-gradient(to bottom, yellow, #83580b);  */
-    /* background-image: -webkit-linear-gradient(bottom, #83580b 0%, yellow 100%); */
     background-image: linear-gradient(180deg, #f8e7a7,  #f7e397, #f5da79, #f4d66a, #f1ca3c, #efc425, #ecbd10, #cea40e, #be980d, #91730a, #9D7B00);
 }
 
@@ -133,4 +124,14 @@ label {
     height: 35px;
     color: white;
     background-color: black;
+}
+
+.lightMode {
+    color: black;
+    background-color: white;
+}
+
+.darkMode {
+    color: white;
+    background-color: #28282B;
 }

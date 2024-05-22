@@ -9,17 +9,22 @@ const bodyTag = document.querySelectorAll('body')
 const sectionTags = document.querySelectorAll('section');
 const headerTags = document.querySelectorAll('header');
 const buttonTags = document.querySelectorAll('button');
+const h1Tags = document.querySelectorAll('h1');
 
 signUpButton.addEventListener('click', function() {
     event.preventDefault();
+
+    const blogs = JSON.parse(localStorage.getItem('blog')) || [];
 
     const blog = {
         username: userName.value,
         title: title.value,
         content: content.value
     };
+    
+    blogs.push(blog);
 
-    localStorage.setItem('blog', JSON.stringify(blog));
+    localStorage.setItem('blog', JSON.stringify(blogs));
 
     window.location.href = 'blog.html';
 });
@@ -60,9 +65,4 @@ lightDarkModeButton.addEventListener('click', function() {
             buttonTags[i]. setAttribute('style', 'background-color:black');
         }
     }
-});
-
-goBack.addEventListener('click', function() {
-    // history.go();
-    console.log('Hello')
 });
