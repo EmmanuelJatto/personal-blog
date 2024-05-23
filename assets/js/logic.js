@@ -1,6 +1,7 @@
 const rootEl = $('#root');
 const h3Tags = $('h3');
 
+//Changes the string from local storage back to an object, and appends it to the rootEl for every different input the user gives
 function loadFromLocalStorage() {
     const blogData = JSON.parse(localStorage.getItem('blog'));
 
@@ -16,5 +17,6 @@ function loadFromLocalStorage() {
     }
 }
 
+//Runs the function
 loadFromLocalStorage();
 

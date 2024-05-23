@@ -11,6 +11,7 @@ const headerTags = document.querySelectorAll('header');
 const buttonTags = document.querySelectorAll('button');
 const h1Tags = document.querySelectorAll('h1');
 
+//Button loads inputs to local storage, and send user to second page
 signUpButton.addEventListener('click', function() {
     event.preventDefault();
 
@@ -29,6 +30,7 @@ signUpButton.addEventListener('click', function() {
     window.location.href = 'blog.html';
 });
 
+//Button switches css of page when clicked, and changes the way the button looks
 lightDarkModeButton.addEventListener('click', function() {
     if (lightDarkModeButton.textContent == '☀️') {
         const darkMode = '🌒';

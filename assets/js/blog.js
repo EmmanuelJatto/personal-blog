@@ -14,14 +14,17 @@ const footerTag = document.querySelectorAll('footer');
 
 // Removed the signupButton event listener, because it was giving an error in the console, and wouldn't allow anything to work
 
+//Sends user back to the first page
 goBack.addEventListener('click', function() {
     window.location.href = 'index.html';
 });
 
+//Used to change the color of the whole webpage background and not just sections
 function changeBackground(color) {
     document.body.style.background = color;
 }
 
+//Used to change the text color of the whole webpage and not just sections
 function changeTextColor(color) {
     document.body.style.color = color
 }
@@ -38,6 +41,9 @@ lightDarkModeButton.addEventListener("click",function() {
     for(i = 0; i < buttonTags.length; i++) {
         buttonTags[i]. setAttribute('style', 'background-color:black');
         break;
+    }
+    for(i = 1; i < buttonTags.length; i++) {
+        buttonTags[i]. setAttribute('style', 'background-color:#28282B; color:white');
     }
     for(i = 0; i < sectionTags.length; i++) {
         sectionTags[i].setAttribute('style', 'color:white; background-color:#28282B');
@@ -71,7 +77,9 @@ lightDarkModeButton.addEventListener("click",function() {
         for(i = 0; i < footerTag.length; i++) {
             footerTag[i].setAttribute('style', 'background-color:white');
         }
-        // newContainer.setAttribute('style', 'color:black');
+        for(i = 1; i < buttonTags.length; i++) {
+            buttonTags[i]. setAttribute('style', 'background-color:black; color:white');
+        }
         document.body.classList.remove('darkMode');
         document.body.classList.add('lightMode');
     }

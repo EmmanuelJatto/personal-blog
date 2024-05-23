@@ -29,6 +29,7 @@ header h1 {
     border-radius: 5px;
 }
 
+/*Used to split the page apart */
 .split {
     height: 100%;
     width: 50%;
@@ -39,12 +40,14 @@ header h1 {
     padding-top: 20px;
 }
 
+/*Positions this section to the left */
 .left {
     left: 0;
     border-right-style: double;
     border-right-width: 12px;
 }
 
+/*Positions this section to the right */
 .right {
     right: 0;
 }
@@ -163,6 +166,7 @@ footer li {
     margin-bottom: 10px;
 }
 
+/*Used to make the webpage more responsive */ 
 @media screen and (max-width: 768px) {
     header, main, footer {
     flex-direction: column;
