@@ -9,4 +9,4 @@ There were a lot of challenges I faced, when developing this website.  One of th
 ![Screenshot of Page 2 of the Personal Blog Website in Light Mode](./assets/images/page2-lightmode-screenshot.jpg)
 ![Screenshot of Page 2 of the Personal Blog Website in Dark Mode](./assets/images/page2-darkmode-screenshot.jpg)
 
-[My First Blog Website Link]()
+[My First Blog Website Link](https://emmanueljatto.github.io/personal-blog/)
